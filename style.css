@@ -89,7 +89,7 @@ button {
     bottom: 50px;
     left: 80%;
     transform: translateX(-80%);
-    background-color: #ddd;
+    background-color: white;
     color: black;
     font-size: 1.5rem;
 }
