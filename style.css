@@ -78,7 +78,7 @@ button {
 
 #finalNoBtn {
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     left: 80%;
     transform: translateX(-80%);
     background-color: #ddd;
