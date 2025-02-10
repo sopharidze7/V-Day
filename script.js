@@ -63,7 +63,6 @@ function startConfetti() {
             speed: Math.random() * 5 + 2
         });
     }
-
     function drawConfetti() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         confettiPieces.forEach((p) => {
