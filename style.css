@@ -16,9 +16,8 @@ body {
     position: relative;
 }
 
-/* Adjust Stitch Image */
 #stitchImage {
-    max-width: 70vw; /* Large but not too much */
+    max-width: 70vw;
     height: auto;
     max-height: 50vh;
     display: block;
@@ -56,7 +55,7 @@ button {
     max-height: 50vh;
 }
 
-/* "Yeah Buddy" Catchphrase */
+
 #catchphrase {
     position: absolute;
     top: 10%;
@@ -79,7 +78,7 @@ button {
     pointer-events: none;
 }
 
-/* FINAL NO BUTTON AT BOTTOM */
+
 #finalNoBtn {
     position: absolute;
     bottom: 10px;
