@@ -3,7 +3,7 @@ const noTexts = [
     "Are you sure?",
     "Think again...",
     "Don't break my heart..",
-    "Do you want me to write a diss on you?🤨"
+    "Do you want me to write a diss on you????"
 ];
 
 function yesClicked() {
@@ -18,7 +18,6 @@ function yesClicked() {
 function noClicked() {
     let noBtn = document.getElementById("noBtn");
     let yesBtn = document.getElementById("yesBtn");
-    let stitchImg = document.getElementById("stitchImage");
 
     if (noCount < noTexts.length) {
         noBtn.innerText = noTexts[noCount]; // Update No button text
@@ -28,12 +27,9 @@ function noClicked() {
     let newSize = 2 + noCount * 3; 
     yesBtn.style.fontSize = `${newSize}rem`;
 
-    let newStitchSize = 70 - noCount * 10; // Reduce by 10% each time
-    stitchImg.style.width = `${newStitchSize}vw`;
-
     if (noCount === noTexts.length) {
         noBtn.id = "finalNoBtn";
-        noBtn.innerText = "Do you want me to write a diss on you?";
+        noBtn.innerText = "Do you want me to write a diss on you????";
     }
 }
 
