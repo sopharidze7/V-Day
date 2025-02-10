@@ -8,11 +8,11 @@ const noTexts = [
 ];
 
 function sendTelegramNotification() {
-    const botToken = "Y7867720629:AAFddpyVvBqdPws4OkPiPCYtQ-GNjmioO74"; 
+    const botToken = "7867720629:AAHIGEgTpBpwnvfcA6jhehM4Uxn4-QYCNeM"; 
     const chatID = "376399784"; 
     const message = encodeURIComponent("🚨 He said yes. He couldn't resist 😏");
 
-    fetch(`https://api.telegram.org/bot7867720629:AAFddpyVvBqdPws4OkPiPCYtQ-GNjmioO74/sendMessage?chat_id=${chatID}&text=${message}`)
+    fetch(`https://api.telegram.org/bot7867720629:AAHIGEgTpBpwnvfcA6jhehM4Uxn4-QYCNeM/sendMessage?chat_id=${chatID}&text=${message}`)
         .then(() => console.log("✅ Telegram notification sent!"))
         .catch(err => console.error("❌ Telegram notification failed:", err));
 }
