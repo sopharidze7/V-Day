@@ -2,9 +2,20 @@ let noCount = 0;
 const noTexts = [
     "Are you sure?",
     "Think again...",
-    "Don't break my heart..",
-    "Do you want me to write a diss on you????"
+    "Don't break my heart.",
+    "Do you want me to write a diss on you?",
+    "You asked for it."
 ];
+
+function sendTelegramNotification() {
+    const botToken = "Y7867720629:AAFddpyVvBqdPws4OkPiPCYtQ-GNjmioO74"; 
+    const chatID = "376399784"; 
+    const message = encodeURIComponent("🚨 He said yes. He couldn't resist 😏");
+
+    fetch(`https://api.telegram.org/bot7867720629:AAFddpyVvBqdPws4OkPiPCYtQ-GNjmioO74/sendMessage?chat_id=${chatID}&text=${message}`)
+        .then(() => console.log("✅ Telegram notification sent!"))
+        .catch(err => console.error("❌ Telegram notification failed:", err));
+}
 
 function yesClicked() {
     document.getElementById("question").style.display = "none";
@@ -13,6 +24,7 @@ function yesClicked() {
     document.getElementById("celebration").style.display = "block";
 
     startConfetti();
+    sendTelegramNotification();
 }
 
 function noClicked() {
@@ -29,7 +41,7 @@ function noClicked() {
 
     if (noCount === noTexts.length) {
         noBtn.id = "finalNoBtn";
-        noBtn.innerText = "Do you want me to write a diss on you????";
+        noBtn.innerText = "You asked for it...";
     }
 }
 
