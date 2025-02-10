@@ -3,7 +3,7 @@ const noTexts = [
     "Are you sure?",
     "Think again...",
     "Don't break my heart..",
-    "Do you want me to write a diss on you?"
+    "Do you want me to write a diss on you?🤨"
 ];
 
 function yesClicked() {
@@ -25,15 +25,12 @@ function noClicked() {
         noCount++;
     }
 
-    // Make the "Yes" button grow dramatically
     let newSize = 2 + noCount * 3; 
     yesBtn.style.fontSize = `${newSize}rem`;
 
-    // Shrink Stitch proportionally
     let newStitchSize = 70 - noCount * 10; // Reduce by 10% each time
     stitchImg.style.width = `${newStitchSize}vw`;
 
-    // On the last click, move the "No" button to bottom and change it
     if (noCount === noTexts.length) {
         noBtn.id = "finalNoBtn";
         noBtn.innerText = "Do you want me to write a diss on you?";
