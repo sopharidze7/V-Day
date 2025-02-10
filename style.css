@@ -16,7 +16,6 @@ body {
     position: relative;
 }
 
-/* Adjust Stitch Image */
 #stitchImage {
     max-width: 70vw;
     height: auto;
@@ -25,7 +24,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* BUTTON STYLING */
 button {
     font-size: 1.5rem;
     padding: 15px 30px;
@@ -36,21 +34,18 @@ button {
     transition: transform 0.3s ease;
 }
 
-/* Yes Button Growth */
 #yesBtn {
     background-color: #ff4081;
     color: white;
     transition: transform 0.3s ease;
 }
 
-/* Prevent the No Button from disappearing too soon */
 #noBtn {
     background-color: #ddd;
     position: relative;
     bottom: 0;
 }
 
-/* Center Dave’s Image */
 #celebrationImage {
     position: absolute;
     top: 50%;
@@ -60,7 +55,6 @@ button {
     max-height: 50vh;
 }
 
-/* "Yeah Buddy" Catchphrase */
 #catchphrase {
     position: absolute;
     top: 10%;
@@ -73,7 +67,6 @@ button {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Floating Confetti */
 #confettiCanvas {
     position: absolute;
     top: 0;
@@ -83,7 +76,6 @@ button {
     pointer-events: none;
 }
 
-/* FINAL NO BUTTON AT BOTTOM */
 #finalNoBtn {
     position: absolute;
     bottom: 50px;
@@ -94,7 +86,6 @@ button {
     font-size: 1.5rem;
 }
 
-/* Mobile Adjustments */
 @media (max-width: 600px) {
     #yesBtn {
         font-size: 1.8rem;
