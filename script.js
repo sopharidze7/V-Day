@@ -20,7 +20,7 @@ function sendTelegramNotification() {
 function yesClicked() {
     document.getElementById("question").style.display = "none";
     document.getElementById("buttons").style.display = "none";
-    document.getElementById("stitchImage").style.display = "none"; // Hide Stitch
+    document.getElementById("stitchImage").style.display = "none"; 
     document.getElementById("celebration").style.display = "block";
 
     startConfetti();
@@ -32,7 +32,7 @@ function noClicked() {
     let yesBtn = document.getElementById("yesBtn");
 
     if (noCount < noTexts.length) {
-        noBtn.innerText = noTexts[noCount]; // Update No button text
+        noBtn.innerText = noTexts[noCount]; 
         noCount++;
     }
 
