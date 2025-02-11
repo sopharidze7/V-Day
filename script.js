@@ -2,7 +2,7 @@ let noCount = 0;
 const noTexts = [
     "Are you sure?",
     "Think again...",
-    "Don't break my heart.",
+    "Don't break my heart..",
     "Do you want me to write a diss on you?",
     "You asked for it."
 ];
@@ -10,11 +10,11 @@ const noTexts = [
 function sendTelegramNotification() {
     const botToken = "7867720629:AAHIGEgTpBpwnvfcA6jhehM4Uxn4-QYCNeM"; 
     const chatID = "376399784"; 
-    const message = encodeURIComponent("🚨 He said yes. He couldn't resist 😏");
+    const message = encodeURIComponent("🚨 He said yes. He couldn't resist");
 
     fetch(`https://api.telegram.org/bot7867720629:AAHIGEgTpBpwnvfcA6jhehM4Uxn4-QYCNeM/sendMessage?chat_id=${chatID}&text=${message}`)
-        .then(() => console.log("✅ Telegram notification sent!"))
-        .catch(err => console.error("❌ Telegram notification failed:", err));
+        .then(() => console.log("Telegram notification sent!"))
+        .catch(err => console.error("Telegram notification failed:", err));
 }
 
 function yesClicked() {
